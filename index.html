@@ -8,61 +8,17 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 <style>
+    
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:Poppins, sans-serif;line-height:1.6;color:#333}
-
-/* global section background */
-section{
-    position:relative;
-    padding:60px 20px;
-    max-width:1100px;
-    margin:auto;
-    color:#fff;
-    background:url('blackforest.jpg') center/cover no-repeat fixed;
+body{
+    font-family:Poppins, sans-serif;
+    line-height:1.6;
+    color:#333;
+    background:
+        linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+        url('blackforest.jpg') center/cover no-repeat fixed;
 }
 
-/* overlay to improve contrast */
-section::before{
-    content:'';
-    position:absolute;
-    inset:0;
-    background:rgba(0,0,0,0.55);
-}
-
-/* keep content above overlay */
-section > *{
-    position:relative;
-    z-index:1;
-}
-
-h2{font-size:2rem;margin-bottom:20px;text-align:center}
-
-.menu{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:12px;
-    margin-top:20px;
-}
-.menu div{
-    padding:12px 15px;
-    border-radius:8px;
-    background:rgba(255,255,255,0.1);
-    border:1px solid rgba(255,255,255,0.2);
-    text-align:center;
-}
-
-.btn{
-    display:inline-block;
-    margin-top:15px;
-    padding:10px 18px;
-    background:#d35400;
-    color:#fff;
-    text-decoration:none;
-    border-radius:6px;
-}
-
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:Poppins, sans-serif;line-height:1.6;color:#333;background:#fff}
 header{
     background:url('blackforest.jpg') center/cover no-repeat;
     height:70vh;
